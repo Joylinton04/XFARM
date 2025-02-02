@@ -5,6 +5,7 @@
     --font-Poppins: "Poppins", serif;
     --font-display: "Roboto", serif;
     --padding-r: 5rem;
+    --breakpoint-ssm: 35rem
     /* @keyframes fade-out {
       0% { opacity: 1; }
       100% { opacity: 0; }
@@ -21,4 +22,10 @@ body {
 
 .active {
     @apply text-green-600
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --padding-r: 3rem;
+  }
 }
