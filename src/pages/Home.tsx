@@ -32,6 +32,8 @@ const Home = () => {
         <Navbar />
         <First_section/>
       </BackgroundLayout>
+      {/* Second_section */}
+      <div></div>
     </div>
   );
 };
