@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --font-header: "Playfair Display SC", serif;
+    --font-header: "Montserrat", serif;
     --font-Poppins: "Poppins", serif;
     --font-display: "Roboto", serif;
     --padding-r: 5rem;

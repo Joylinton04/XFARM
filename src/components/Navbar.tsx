@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="relative">
       <div className="flex justify-between items-center py-8">
         {/* Logo */}
-        <h1 className="font-extrabold font-poppins text-[#f5f5f5] z-20">
+        <h1 className="font-extrabold font-header text-[#f5f5f5] z-20">
           <span className="text-5xl max-[64.1rem]:text-3xl uppercase">Xfarm</span>
         </h1>
 
