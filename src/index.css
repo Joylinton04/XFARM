@@ -20,6 +20,11 @@ body {
   background-color: aliceblue;
 }
 
+.contain {
+  @apply max-w-7xl;
+  @apply w-[80%];
+}
+
 .active {
     @apply text-green-600
 }

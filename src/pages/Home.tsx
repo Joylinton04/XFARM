@@ -33,10 +33,10 @@ interface SectionProps {
 
 const SectionComponent: React.FC<SectionProps> = ({ className = "" }) => {
   return (
-    <div className={`flex justify-center items-center mt-16 font-Poppins px-6 ${className}`}>
-      <div className="flex flex-wrap justify-between items-center max-w-7xl py-20 gap-6 w-[80%]">
+    <div className={`flex justify-center items-center mt-16 px-6`}>
+      <div className={`flex flex-wrap justify-between items-center max-w-7xl py-20 gap-6 w-[80%] max-[64.1rem]:w-[95%] ${className}`}>
         {/* Text Content */}
-        <div className="flex flex-col gap-6 w-full md:w-[50%] lg:w-[40%]">
+        <div className="flex flex-col gap-6 max-[800px]:w-full w-1/2 lg:w-[40%]">
           <h1 className="text-4xl font-bold text-black/90 leading-tight">
             Digital Transformation in Agriculture
           </h1>
@@ -53,11 +53,11 @@ const SectionComponent: React.FC<SectionProps> = ({ className = "" }) => {
         </div>
 
         {/* Image */}
-        <div className="h-[28rem] w-[24rem] md:h-[35rem] md:w-[30rem]">
+        <div className="h-[28rem] w-[26rem] md:h-[35rem] max-[800px]:w-full min-[64.2rem]:w-[36rem]">
           <img
             src={digital_trans}
             alt="Digital Transformation in Agriculture"
-            className="object-cover object-center w-full h-full rounded-2xl shadow-xl shadow-black/30 transition-all duration-500 hover:scale-105"
+            className="object-cover object-center w-full h-full rounded-2xl shadow-xl shadow-black/30 transition-all duration-500"
           />
         </div>
       </div>
@@ -68,14 +68,28 @@ const SectionComponent: React.FC<SectionProps> = ({ className = "" }) => {
 
 const Home = () => {
   return (
-    <div className="min-h-[200vh] font-display">
+    <div className="min-h-[300vh] font-display">
       <BackgroundLayout pic="url('/src/assets/xfarmbg.jpg')">
         <Navbar />
         <First_section />
       </BackgroundLayout>
       {/* Second_section */}
-      <div>
+      <div className="font-Poppins">
         <SectionComponent/>
+        {/*  */}
+        <div className="bg-white py-12">
+          <div className="flex items-center justify-center">
+            <div className="flex flex-col contain gap-6">
+              <h1 className="text-4xl font-bold text-black/90 leading-tight">Farming Innovation</h1>
+              <div className="w-[70%]">Revolutionizing agriculture with precision technology, IoT sensors, drones and robotics to boost efficiency, sustainability and resilience. Explore the future of farming with regenerative practice, digital platforms and cutting edge biotech solution.</div>
+            </div>
+          </div>
+          <SectionComponent className="flex-row-reverse"/>
+          <SectionComponent/>
+          <SectionComponent className="flex-row-reverse"/>
+          <SectionComponent/>
+        </div>
+
       </div>
     </div>
   );
