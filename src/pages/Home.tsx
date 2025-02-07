@@ -69,7 +69,7 @@ const SectionComponent: React.FC<SectionProps> = ({ className = "" }) => {
 const Home = () => {
   return (
     <div className="min-h-[300vh] font-display">
-      <BackgroundLayout pic="url('/src/assets/xfarmbg.jpg')">
+      <BackgroundLayout pic="url('/xfarmbg.jpg')">
         <Navbar />
         <First_section />
       </BackgroundLayout>
