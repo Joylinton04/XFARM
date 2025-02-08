@@ -5,6 +5,7 @@ import img1 from "../assets/sec_Img1.webp";
 import img2 from "../assets/sec_img2.webp";
 import img3 from "../assets/sec_img3.jpg";
 import img4 from "../assets/sec_img4.jpg";
+import Footer from "../components/Footer";
 
 interface BackgroundProps {
   children: React.ReactNode;
@@ -79,7 +80,7 @@ const SectionComponent: React.FC<SectionProps> = ({ className = "", pic }) => {
 const SectionComponent2: React.FC<SectionProps2> = ({ className = "",pic, heading, text }) => {
   return (
     <div className={`flex justify-center items-center mt-8 px-6`}>
-      <div className={`flex flex-wrap justify-between items-center max-w-7xl py-16 gap-6 w-[85%] max-[64.1rem]:w-[95%] ${className}`}>
+    <div className={`flex flex-wrap justify-between items-center max-w-7xl py-16 gap-6 w-[85%] max-[64.1rem]:w-[95%] ${className}`}>
         {/* Text Content */}
         <div className="flex flex-col gap-6 max-[800px]:w-full w-1/2 lg:w-[40%]">
           <h1 className="text-4xl font-bold text-black/90 leading-tight">
@@ -150,6 +151,7 @@ const Home = () => {
         </div>
 
       </div>
+      <Footer/>
     </div>
   );
 };
