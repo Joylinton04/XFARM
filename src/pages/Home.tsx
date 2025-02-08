@@ -151,6 +151,17 @@ const Home = () => {
         </div>
 
       </div>
+      <div className="flex justify-center items-center bg-white pb-8 font-Poppins">
+          <div className="contain bg-black/80 h-max rounded-2xl flex p-12 max-md:p-8 text-white flex-col items-center gap-8">
+            <h1 className="w-[60%] max-md:w-[90%] text-center text-3xl font-bold leading-tight">Ready to Transform your Your Farm with Technology ?</h1>
+            <div className="text-center max-md:text-sm w-[60%] max-[64.2rem]:w-full leading-relaxed">
+              Boost productivity, efficiency and sustainability with our innovative farming app. Monitor crops, manage resources and make data-driven decisions - all in the palm of your hand.
+            </div>
+            <button className="shadow-lg cursor-pointer px-8 py-3 bg-gradient-to-r from-green-600 to-green-800 text-white rounded-full w-max transition-transform duration-300 hover:scale-105">
+            Get started
+          </button>
+          </div>
+      </div>
       <Footer/>
     </div>
   );
