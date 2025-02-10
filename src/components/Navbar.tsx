@@ -7,10 +7,10 @@ const Navbar = () => {
 
   const navItems = [
     {nav: 'Home', to: ''},
-    {nav: 'Effectiveness', to: 'effectiveness'},
-    {nav: 'Future Prospect', to: 'future_prospect'},
-    {nav: 'Strengthen', to: 'strength'},
-    {nav: 'About', to: 'about'},
+    // {nav: 'Effectiveness', to: 'effectiveness'},
+    // {nav: 'Future Prospect', to: 'future_prospect'},
+    // {nav: 'Strengthen', to: 'strength'},
+    // {nav: 'About', to: 'about'},
   ];
 
   return (
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <ul className="max-[50rem]:hidden flex gap-8 max-[64.1rem]:gap-4 font-semibold text-[#ccc] font-poppins">
-          {navItems.map((item, index) => (
+          {/* {navItems.map((item, index) => (
             <li key={index}>
               <NavLink 
                 to={`/${item.to}`}
@@ -34,7 +34,11 @@ const Navbar = () => {
                 {item.nav}
               </NavLink>
             </li>
-          ))}
+          ))} */}
+          <NavLink to="/">Home</NavLink>
+          <li className="cursor-pointer hover:text-green-500">Future Prospects</li>
+          <li className="cursor-pointer hover:text-green-500">Strengthen</li>
+          <li className="cursor-pointer hover:text-green-500">About</li>
         </ul>
 
         {/* CTA Button */}
@@ -62,8 +66,8 @@ const Navbar = () => {
         ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
       `}>
         <div className="flex flex-col items-center justify-center h-full">
-          <ul className="flex flex-col gap-8 text-center font-poppins">
-            {navItems.map((item, index) => (
+          <ul className="flex flex-col gap-8 text-center font-poppins text-2xl font-semibold text-[#ccc]">
+            {/* {navItems.map((item, index) => (
               <li key={index}>
                 <NavLink 
                   to={`/${item.to}`}
@@ -77,7 +81,12 @@ const Navbar = () => {
                   {item.nav}
                 </NavLink>
               </li>
-            ))}
+              
+            ))} */}
+            <NavLink onClick={() => setIsMenuOpen(false)} to="/">Home</NavLink>
+            <li onClick={() => setIsMenuOpen(false)} className="cursor-pointer hover:text-green-500">Future Prospects</li>
+            <li onClick={() => setIsMenuOpen(false)} className="cursor-pointer hover:text-green-500">Strengthen</li>
+            <li onClick={() => setIsMenuOpen(false)} className="cursor-pointer hover:text-green-500">About</li>
             <li className="mt-8">
               <button 
                 onClick={() => setIsMenuOpen(false)}
